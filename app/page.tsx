@@ -108,45 +108,19 @@ export default function HomePage() {
 
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
-              {/* Game Screenshots */}
-              <div className="space-y-3 sm:space-y-4 order-2 lg:order-1">
-                <div className="grid grid-cols-2 gap-2 sm:gap-3">
-                  {/* Added hover effects to images */}
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-purple-500/30 hover:border-purple-400/60 hover:scale-105 transition-all duration-300 cursor-pointer group">
-                    <Image
-                      src="/images/harvey-intro.png"
-                      alt="Harvey introducing himself in Bloodmoney Clicker"
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      loading="lazy"
-                      sizes="(max-width: 768px) 45vw, (max-width: 1024px) 25vw, 20vw"
-                    />
-                  </div>
-                  <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-purple-500/30 hover:border-purple-400/60 hover:scale-105 transition-all duration-300 cursor-pointer group">
-                    <Image
-                      src="/images/harvey-begging.png"
-                      alt="Harvey begging for mercy in Bloodmoney Clicker"
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      loading="lazy"
-                      sizes="(max-width: 768px) 45vw, (max-width: 1024px) 25vw, 20vw"
-                    />
-                  </div>
-                </div>
-                <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-purple-500/30 hover:border-purple-400/60 hover:scale-105 transition-all duration-300 cursor-pointer group">
-                  <Image
-                    src="/images/medical-bill.png"
-                    alt="Medical bill showing $25,000 in Bloodmoney Clicker"
-                    width={800}
-                    height={300}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    loading="lazy"
-                    sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 40vw"
+              
+              {/* --- 这里是唯一的修改 --- */}
+              {/* Game Embed for Clicker Edition (replacing screenshots) */}
+              <div className="order-2 lg:order-1">
+                <div className="border-2 border-purple-500/30 rounded-lg overflow-hidden hover:border-purple-400/60 transition-all duration-300 shadow-lg shadow-purple-500/10">
+                  <GameEmbed
+                    src="https://kbhgames.com/game/bloodmoney"
+                    title="Bloodmoney - Clicker Edition"
+                    className="bg-black"
                   />
                 </div>
               </div>
+              {/* ---------------------- */}
 
               {/* Game Description */}
               <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
@@ -179,10 +153,9 @@ export default function HomePage() {
                     size="lg"
                     className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg hover:shadow-xl"
                   >
-                    <Link href="https://kbhgames.com/game/bloodmoney" target="_blank" rel="noopener noreferrer">
-                      {/* --- 这里是唯一的修改 --- */}
-                      Click to play
-                      {/* ---------------------- */}
+                    {/* 这个按钮现在可以考虑移除了，因为游戏可以直接玩 */}
+                    <Link href="/play?game=harvey" rel="noopener noreferrer">
+                      Play Full Screen
                     </Link>
                   </Button>
                 </div>
