@@ -12,6 +12,8 @@ import { Maximize, Minimize, DollarSign, Zap } from "lucide-react"
 
 export default function PlayPage() {
   const [isFullscreen, setIsFullscreen] = useState(false)
+  
+  // 注意：因为 Harvey's Booth 现在是外部链接，所以 activeGame 状态将始终是 "main"
   const [activeGame, setActiveGame] = useState<"main" | "harvey">("main")
 
   const toggleFullscreen = () => {
@@ -53,14 +55,20 @@ export default function PlayPage() {
               <Zap className="h-4 w-4 mr-2" />
               Main Game
             </Button>
-            <Button onClick={() => setActiveGame("harvey")} variant={activeGame === "harvey" ? "default" : "ghost"}>
-              <DollarSign className="h-4 w-4 mr-2" />
-              Harvey's Booth
+            
+            {/* --- 这里是唯一的修改 --- */}
+            <Button asChild variant="ghost">
+              <a href="https://kbhgames.com/game/bloodmoney" target="_blank" rel="noopener noreferrer">
+                <DollarSign className="h-4 w-4 mr-2" />
+                Harvey's Booth
+              </a>
             </Button>
+            {/* ---------------------- */}
+
           </div>
         </div>
 
-        {/* Conditional Rendering for Main Game */}
+        {/* Conditional Rendering for Main Game (现在只会显示这个) */}
         {activeGame === "main" && (
           <div className="relative">
             <div className="flex justify-end mb-4">
@@ -112,25 +120,6 @@ export default function PlayPage() {
           </div>
         )}
 
-        {/* --- 新增的 Harvey's Booth 游戏区域 --- */}
-        {activeGame === "harvey" && (
-          <div>
-            <div className="aspect-video max-w-6xl mx-auto bg-black rounded-lg overflow-hidden border-2 border-purple-500/30">
-              <GameEmbed
-                src="https://kbhgames.com/game/bloodmoney"
-                title="Bloodmoney - Clicker Edition"
-                className="bg-black"
-              />
-            </div>
-            <div className="text-center mt-8">
-              <p className="text-muted-foreground">
-                A dark psychological clicker game with moral consequences. How far will you go?
-              </p>
-            </div>
-          </div>
-        )}
-        {/* --- 新增区域结束 --- */}
-
         {!isFullscreen && (
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             <SocialSharing
@@ -149,8 +138,6 @@ export default function PlayPage() {
         )}
 
         {!isFullscreen && <RelatedContent currentPage="/play" maxItems={4} />}
-
-        {/* ... existing harvey section code ... (这个注释可以删除了) */}
       </div>
     </div>
   )
