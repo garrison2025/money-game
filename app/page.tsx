@@ -17,8 +17,9 @@ export default function HomePage() {
         <div className="container relative z-10 mx-auto max-w-screen-xl px-4">
           <div className="text-center">
             {/* Added animation classes for hero title */}
+            {/* H1 */}
             <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight animate-in fade-in-0 slide-in-from-bottom-4 duration-1000">
-              <span className="blood-text">BLOODMONEY GAME!</span>
+              <span className="blood-text">BLOODMONEY!</span>
             </h1>
             {/* Added staggered animation for subtitle */}
             <p className="mb-6 sm:mb-8 text-lg sm:text-xl md:text-2xl text-muted-foreground animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
@@ -55,6 +56,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 bg-card/50">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="text-center mb-8 sm:mb-12">
+            {/* H2 */}
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">BLOODMONEY! - Action Survival</h2>
             <p className="text-muted-foreground text-sm sm:text-base px-4">
               The ultimate survival gauntlet - manage resources, upgrade weapons, and fight to survive
@@ -97,6 +99,7 @@ export default function HomePage() {
               <Star className="h-3 w-3 sm:h-4 sm:w-4" />
               ALTERNATIVE VERSION
             </div>
+            {/* H2 */}
             <h2 className="text-xl sm:text-2xl font-bold mb-2 text-purple-100">Bloodmoney - Clicker Edition</h2>
             <p className="text-purple-200/80 text-sm sm:text-base">
               A dark psychological clicker game with moral consequences
@@ -150,7 +153,8 @@ export default function HomePage() {
                 {/* Added hover effects to card */}
                 <Card className="bg-purple-900/30 border-purple-500/30 hover:bg-purple-900/40 hover:border-purple-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
                   <CardHeader className="pb-3 sm:pb-6">
-                    <CardTitle className="text-purple-100 text-lg sm:text-xl">A Different Kind of Bloodmoney</CardTitle>
+                    {/* H3 */}
+                    <h3 className="text-purple-100 text-lg sm:text-xl">A Different Kind of Bloodmoney</h3>
                   </CardHeader>
                   <CardContent className="text-purple-200/90 text-sm sm:text-base space-y-3 sm:space-y-4">
                     <p>
@@ -195,6 +199,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="text-center mb-8 sm:mb-12">
+            {/* H2 */}
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Master the Game</h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Key features that make BLOODMONEY! the ultimate survival challenge
@@ -206,9 +211,10 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-primary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-primary mb-3 sm:mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300" />
-                <CardTitle className="text-base sm:text-lg group-hover:text-primary transition-colors duration-300">
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg group-hover:text-primary transition-colors duration-300">
                   Resource Management
-                </CardTitle>
+                </h3>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
@@ -220,9 +226,10 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-secondary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg hover:shadow-secondary/10 transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Zap className="h-10 w-10 sm:h-12 sm:w-12 text-secondary mb-3 sm:mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300" />
-                <CardTitle className="text-base sm:text-lg group-hover:text-secondary transition-colors duration-300">
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg group-hover:text-secondary transition-colors duration-300">
                   Weapon Upgrades
-                </CardTitle>
+                </h3>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
@@ -234,9 +241,10 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-primary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Target className="h-10 w-10 sm:h-12 sm:w-12 text-primary mb-3 sm:mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300" />
-                <CardTitle className="text-base sm:text-lg group-hover:text-primary transition-colors duration-300">
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg group-hover:text-primary transition-colors duration-300">
                   Strategic Gadgets
-                </CardTitle>
+                </h3>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
@@ -248,9 +256,10 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-secondary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg hover:shadow-secondary/10 transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Users className="h-10 w-10 sm:h-12 sm:w-12 text-secondary mb-3 sm:mb-4 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300" />
-                <CardTitle className="text-base sm:text-lg group-hover:text-secondary transition-colors duration-300">
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg group-hover:text-secondary transition-colors duration-300">
                   Skill Trees
-                </CardTitle>
+                </h3>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-sm">
@@ -266,6 +275,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 bg-card/50">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="text-center mb-8 sm:mb-12">
+            {/* H2 */}
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Latest Guides</h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Master the game with our comprehensive strategy guides
@@ -276,11 +286,12 @@ export default function HomePage() {
             {/* Enhanced guide cards with better hover effects */}
             <Card className="bg-card border-primary/20 hover:border-primary/40 hover:scale-105 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 group">
               <CardHeader className="pb-3 sm:pb-6">
-                <CardTitle className="text-lg sm:text-xl">
+                {/* H3 */}
+                <h3 className="text-lg sm:text-xl">
                   <Link href="/guides/beginners" className="hover:text-primary transition-colors group-hover:underline">
                     Beginner's Survival Guide
                   </Link>
-                </CardTitle>
+                </h3>
                 <CardDescription className="text-sm">
                   Master resource management and basic survival tactics
                 </CardDescription>
@@ -302,11 +313,12 @@ export default function HomePage() {
 
             <Card className="bg-card border-primary/20 hover:border-primary/40 hover:scale-105 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 group">
               <CardHeader className="pb-3 sm:pb-6">
-                <CardTitle className="text-lg sm:text-xl">
+                {/* H3 */}
+                <h3 className="text-lg sm:text-xl">
                   <Link href="/guides/advanced" className="hover:text-primary transition-colors group-hover:underline">
                     Advanced Strategy Guide
                   </Link>
-                </CardTitle>
+                </h3>
                 <CardDescription className="text-sm">Customize your perfect combat build and dominate</CardDescription>
               </CardHeader>
               <CardContent>
@@ -331,6 +343,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="text-center mb-8 sm:mb-12">
+            {/* H2 */}
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Frequently Asked Questions</h2>
             <p className="text-muted-foreground text-sm sm:text-base">
               Get answers to common questions about Bloodmoney games
@@ -342,7 +355,8 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-primary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <HelpCircle className="h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2 group-hover:rotate-12 transition-transform duration-300" />
-                <CardTitle className="text-base sm:text-lg">What's the difference between the two games?</CardTitle>
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg">What's the difference between the two games?</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -356,7 +370,8 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-secondary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <GamepadIcon className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mb-2 group-hover:rotate-12 transition-transform duration-300" />
-                <CardTitle className="text-base sm:text-lg">Are the games completely free?</CardTitle>
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg">Are the games completely free?</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -369,7 +384,8 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-primary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Clock className="h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2 group-hover:rotate-12 transition-transform duration-300" />
-                <CardTitle className="text-base sm:text-lg">Do I need to create an account?</CardTitle>
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg">Do I need to create an account?</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -382,7 +398,8 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-secondary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <ShieldIcon className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mb-2 group-hover:rotate-12 transition-transform duration-300" />
-                <CardTitle className="text-base sm:text-lg">What devices are supported?</CardTitle>
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg">What devices are supported?</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -395,7 +412,8 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-primary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Target className="h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2 group-hover:rotate-12 transition-transform duration-300" />
-                <CardTitle className="text-base sm:text-lg">Are there age restrictions?</CardTitle>
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg">Are there age restrictions?</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
@@ -408,7 +426,8 @@ export default function HomePage() {
             <Card className="bg-card/50 border-primary/20 hover:border-secondary/40 hover:bg-card/80 hover:scale-105 hover:shadow-lg transition-all duration-300 group cursor-pointer">
               <CardHeader className="pb-3 sm:pb-6">
                 <Users className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mb-2 group-hover:rotate-12 transition-transform duration-300" />
-                <CardTitle className="text-base sm:text-lg">How can I get help or report issues?</CardTitle>
+                {/* H3 */}
+                <h3 className="text-base sm:text-lg">How can I get help or report issues?</h3>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
