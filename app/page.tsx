@@ -174,14 +174,15 @@ export default function HomePage() {
                 </Card>
 
                 <div className="flex justify-center">
-                  {/* Enhanced button with glow effect */}
                   <Button
                     asChild
                     size="lg"
-                    className="border-purple-500/50 text-purple-300 hover:bg-purple-500/20 bg-transparent px-8 py-4 text-lg font-semibold hover:scale-105 active:scale-95 transition-all duration-200 hover:shadow-lg hover:shadow-purple-500/25 hover:border-purple-400/70"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg hover:shadow-xl"
                   >
                     <Link href="https://kbhgames.com/game/bloodmoney" target="_blank" rel="noopener noreferrer">
-                      Play on KBH Games
+                      {/* --- 这里是唯一的修改 --- */}
+                      Click to play
+                      {/* ---------------------- */}
                     </Link>
                   </Button>
                 </div>
