@@ -19,7 +19,7 @@ export default function HomePage() {
             {/* Added animation classes for hero title */}
             {/* H1 */}
             <h1 className="mb-4 sm:mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight animate-in fade-in-0 slide-in-from-bottom-4 duration-1000">
-              <span className="blood-text">BLOODMONEY!</span>
+              <span className="blood-text">BLOODMONEY GAME!</span>
             </h1>
             {/* Added staggered animation for subtitle */}
             <p className="mb-6 sm:mb-8 text-lg sm:text-xl md:text-2xl text-muted-foreground animate-in fade-in-0 slide-in-from-bottom-4 duration-1000 delay-200">
