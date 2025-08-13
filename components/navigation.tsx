@@ -32,7 +32,9 @@ export function Navigation() {
           <div className="font-display text-xl font-bold">
             <span className="blood-text">BLOOD</span>
             <span className="money-text">MONEY</span>
-            <span className="text-muted-foreground">.pro</span>
+            {/* --- 这里是唯一的修改 --- */}
+            <span className="text-muted-foreground"> GAME</span>
+            {/* ---------------------- */}
           </div>
         </Link>
 
