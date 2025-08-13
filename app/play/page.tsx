@@ -60,6 +60,7 @@ export default function PlayPage() {
           </div>
         </div>
 
+        {/* Conditional Rendering for Main Game */}
         {activeGame === "main" && (
           <div className="relative">
             <div className="flex justify-end mb-4">
@@ -111,6 +112,25 @@ export default function PlayPage() {
           </div>
         )}
 
+        {/* --- 新增的 Harvey's Booth 游戏区域 --- */}
+        {activeGame === "harvey" && (
+          <div>
+            <div className="aspect-video max-w-6xl mx-auto bg-black rounded-lg overflow-hidden border-2 border-purple-500/30">
+              <GameEmbed
+                src="https://kbhgames.com/game/bloodmoney"
+                title="Bloodmoney - Clicker Edition"
+                className="bg-black"
+              />
+            </div>
+            <div className="text-center mt-8">
+              <p className="text-muted-foreground">
+                A dark psychological clicker game with moral consequences. How far will you go?
+              </p>
+            </div>
+          </div>
+        )}
+        {/* --- 新增区域结束 --- */}
+
         {!isFullscreen && (
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             <SocialSharing
@@ -130,7 +150,7 @@ export default function PlayPage() {
 
         {!isFullscreen && <RelatedContent currentPage="/play" maxItems={4} />}
 
-        {/* ... existing harvey section code ... */}
+        {/* ... existing harvey section code ... (这个注释可以删除了) */}
       </div>
     </div>
   )
