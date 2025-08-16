@@ -6,6 +6,7 @@ import { BackToTop } from "@/components/back-to-top"
 import { PWAInstall } from "@/components/pwa-install"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 import { ErrorBoundary } from "@/components/error-boundary"
+import Script from "next/script" // 1. 导入 Script 组件
 
 const orbitron = Orbitron({
   subsets: ["latin"],
@@ -199,6 +200,13 @@ html {
           <PWAInstall />
           <PerformanceMonitor />
         </ErrorBoundary>
+
+        {/* 2. 添加 Adsterra 广告脚本 */}
+        <Script
+          id="adsterra-script"
+          strategy="lazyOnload"
+          src="//pl27429050.profitableratecpm.com/25/9f/1b/259f1b7252106895644b52f71fce5ea6.js"
+        />
       </body>
     </html>
   )
